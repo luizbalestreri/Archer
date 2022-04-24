@@ -5,18 +5,14 @@ using UnityEngine;
 public class ArrowString : MonoBehaviour
 {
     bool arrowEngaged = false;
-    GameObject top;
-    GameObject bottom;
-    GameObject center;
-    Vector2 centerReset;
+    private Touch theTouch, theTouch2;
+    private int maxTapCount = 2;
+    GameObject top, bottom, center, arrow;
     [SerializeField]
     GameObject arrowPrefab;
-    GameObject arrow;
     float arrowOffset = 0.3f;
-    LineRenderer topLineRenderer;
-    LineRenderer bottomLineRenderer;
-    Vector2 click;
-    Vector2 centerPosition;
+    LineRenderer topLineRenderer, bottomLineRenderer;
+    Vector2 centerReset;
     // Start is called before the first frame update
     void Awake(){
         top = transform.GetChild(0).gameObject;
@@ -34,8 +30,10 @@ public class ArrowString : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        click = center.transform.InverseTransformPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition));   
-        centerPosition = center.transform.localPosition;
+        HandleTouch();
+    }
+
+    void HandleMouse(){
         if (Input.GetMouseButton(0) && !arrowEngaged){
             Vector2 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 centerPosition = center.transform.position;
@@ -61,7 +59,61 @@ public class ArrowString : MonoBehaviour
                 arrow.GetComponent<Arrow>().shot = true;
             } else {GameObject.Destroy(arrow);}
             ResetLineRenderer();
-        }        
+        }     
+    }
+
+    void HandleTouch(){
+        if (Input.touchCount > 1){
+            theTouch = Input.GetTouch(1);
+            if(theTouch.phase == TouchPhase.Began && !arrowEngaged){
+                Vector2 clickPosition = Camera.main.ScreenToWorldPoint(theTouch.position);
+                Vector2 centerPosition = center.transform.position;
+                if (Vector2.Distance(clickPosition, centerPosition) <= arrowOffset){
+                    RespawnArrow();
+                    arrowEngaged = true;
+                }
+            }
+            if(theTouch.phase == TouchPhase.Moved && arrowEngaged){
+                Vector2 clickPosition = Camera.main.ScreenToWorldPoint(theTouch.position);
+                RotateObject(gameObject, clickPosition, 180, 80);
+                RotateObject(arrow, gameObject.transform.position, 0, 80);
+                MoveLineRenderer();
+                MoveString(clickPosition, 100);
+            }
+            if(theTouch.phase == TouchPhase.Ended && arrowEngaged){
+                arrowEngaged = false;
+                float distance = Vector2.Distance(centerReset, center.transform.localPosition);
+                if (distance > 0.01f){
+                    arrow.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.right * distance * 3000);
+                    arrow.GetComponent<Arrow>().shot = true;
+                } else {GameObject.Destroy(arrow);}
+                ResetLineRenderer();   
+            }
+        }
+
+        
+
+        if (Input.touchCount > 0){
+            theTouch = Input.GetTouch(0);
+            //Debug.Log(Camera.main.ScreenToWorldPoint(theTouch.position));
+            if(theTouch.phase == TouchPhase.Moved){
+                Vector2 clickPosition = Camera.main.ScreenToWorldPoint(theTouch.position);
+                Vector2 direction = (clickPosition - (Vector2)transform.position).normalized;
+                Debug.Log(direction);
+                Vector2 distance = new Vector2(2,2);
+                //Vector2 distance = clickPosition - (Vector2) transform.position;
+                transform.position = (Vector2) transform.position + (direction * distance);
+                //Vector2 clickPosition2 = transform.InverseTransformPoint(clickPosition);
+                //Debug.Log(transform.InverseTransformPoint(clickPosition2));
+                Debug.Log(Vector2.Dot(transform.position, clickPosition));
+                //transform.position = clickPosition;
+                topLineRenderer.SetPosition(0, top.transform.position);
+                bottomLineRenderer.SetPosition(0, bottom.transform.position);
+                topLineRenderer.SetPosition(1, center.transform.position);
+                bottomLineRenderer.SetPosition(1, center.transform.position);
+                if(arrowEngaged) MoveArrow();
+            }
+        }
     }
 
     void MoveString(Vector2 clickPosition, int speed){
