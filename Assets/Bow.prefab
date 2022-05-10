@@ -141,7 +141,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4843326616703463456}
   - component: {fileID: 4843326616703463463}
-  - component: {fileID: 4843326616703463462}
   m_Layer: 0
   m_Name: Bow
   m_TagString: Untagged
@@ -187,7 +186,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -219,19 +218,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4843326616703463462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4843326616703463461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3f7f6928325de44d82e29c97001e224, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arrowPrefab: {fileID: 9016146663766447129, guid: 26042cd0b5cea4f43a74c2bad24ee3ac, type: 3}
 --- !u!1 &4843326617848256926
 GameObject:
   m_ObjectHideFlags: 0
