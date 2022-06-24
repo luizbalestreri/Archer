@@ -11,6 +11,7 @@ public int length;
 public Vector3[] segmentPoses;
 private Vector3[] segmentV; 
 public Transform targetDir;
+
 public float targetDist;
 public float smoothSpeed; 
 public Transform[] bodyParts;
@@ -19,7 +20,6 @@ public float wiggle;
 public bool wiggleSign = false;
 
     private void Start() { 
-
         segmentPoses = new Vector3[length]; 
         segmentV = new Vector3[length]; 
     } 
@@ -46,9 +46,5 @@ public bool wiggleSign = false;
     private void Wiggle(){
         if(Mathf.Abs(wiggle) > 7) wiggleSign = !wiggleSign;
         wiggle += wiggleSign? 0.3f : -0.3f;
-    }
-
-    private void Dig(){
-
     }
 }

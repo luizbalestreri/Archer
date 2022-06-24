@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f381f8a1b64ca7c4ead4a101e0b8d464
+guid: a2daff5022c15c54d9f6f25fe959222d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 70
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,85 +116,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: headAnmt_0
+      name: holeUpDisappering_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 50
         height: 50
-      alignment: 9
-      pivot: {x: 0.060379725, y: 0.5233426}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 887befd918caef14e8044d8a84188e92
-      internalID: -195108521
+      spriteID: aff739e87f98a6949a50b1d2064d0b9a
+      internalID: -781355032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: headAnmt_1
+      name: holeUpDisappering_1
       rect:
         serializedVersion: 2
         x: 50
         y: 0
         width: 50
         height: 50
-      alignment: 9
-      pivot: {x: 0.07983193, y: 0.51556176}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fb0a3a17a2c5a54594eda0f03f06067
-      internalID: 766694038
+      spriteID: 9a35dad95ea5f4b4c8201864eaeef0e0
+      internalID: -374504926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: headAnmt_2
+      name: holeUpDisappering_2
       rect:
         serializedVersion: 2
         x: 100
         y: 0
         width: 50
         height: 50
-      alignment: 9
-      pivot: {x: 0.05648926, y: 0.5116713}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d613d18b937e684b9d944049f4ba810
-      internalID: -1679244675
+      spriteID: 3be2b348c01b7ba45be7d8beb27ef8e3
+      internalID: -981970487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: headAnmt_3
+      name: holeUpDisappering_3
       rect:
         serializedVersion: 2
         x: 150
         y: 0
         width: 50
         height: 50
-      alignment: 9
-      pivot: {x: 0.0681604, y: 0.49610952}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 931abc8d64fbfe847b2f2f7f03d7bad9
-      internalID: -1091405056
+      spriteID: 4be4eef3e52b6834a8d78e6d4efbeb31
+      internalID: 1695513020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holeUpDisappering_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7abd33626ae2b34baf5041196ef8742
+      internalID: 530922234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holeUpDisappering_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30307dbdbaa3e7d44870e3af575a984f
+      internalID: 1686587469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holeUpDisappering_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc961399d38f91445932c3218f78a3e2
+      internalID: 2006775141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holeUpDisappering_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5fa3fce75fcd14392ee3a788db843c
+      internalID: -2139164155
       vertices: []
       indices: 
       edges: []
@@ -210,10 +294,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      headAnmt_0: -195108521
-      headAnmt_3: -1091405056
-      headAnmt_2: -1679244675
-      headAnmt_1: 766694038
+      holeUpDisappering_7: -2139164155
+      holeUpDisappering_0: -781355032
+      holeUpDisappering_5: 1686587469
+      holeUpDisappering_3: 1695513020
+      holeUpDisappering_1: -374504926
+      holeUpDisappering_6: 2006775141
+      holeUpDisappering_4: 530922234
+      holeUpDisappering_2: -981970487
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f381f8a1b64ca7c4ead4a101e0b8d464
+guid: 430b8b1d3f9e5e24283c8cc77001bba2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 70
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,85 +116,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: headAnmt_0
+      name: holeDownDisappering_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 50
         height: 50
-      alignment: 9
-      pivot: {x: 0.060379725, y: 0.5233426}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 887befd918caef14e8044d8a84188e92
-      internalID: -195108521
+      spriteID: c5ef96d3f108397438bd8d2ca650472a
+      internalID: -1018536850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: headAnmt_1
+      name: holeDownDisappering_1
       rect:
         serializedVersion: 2
         x: 50
         y: 0
         width: 50
         height: 50
-      alignment: 9
-      pivot: {x: 0.07983193, y: 0.51556176}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fb0a3a17a2c5a54594eda0f03f06067
-      internalID: 766694038
+      spriteID: 7cbb7d86be7496f4d9b02dad2a7d9c51
+      internalID: 1229045867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: headAnmt_2
+      name: holeDownDisappering_2
       rect:
         serializedVersion: 2
         x: 100
         y: 0
         width: 50
         height: 50
-      alignment: 9
-      pivot: {x: 0.05648926, y: 0.5116713}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d613d18b937e684b9d944049f4ba810
-      internalID: -1679244675
+      spriteID: 920214e4679a80249a9b067f09f5f07c
+      internalID: -1798695098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: headAnmt_3
+      name: holeDownDisappering_3
       rect:
         serializedVersion: 2
         x: 150
         y: 0
         width: 50
         height: 50
-      alignment: 9
-      pivot: {x: 0.0681604, y: 0.49610952}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 931abc8d64fbfe847b2f2f7f03d7bad9
-      internalID: -1091405056
+      spriteID: e6739a2682810e04abf04d565cb5e6ed
+      internalID: 302518441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holeDownDisappering_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d4219b132fe5f46bf75baed8ce1df0
+      internalID: -2036095100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holeDownDisappering_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394de1f6f26bbad4eb54887b91ed8486
+      internalID: -1591452521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holeDownDisappering_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf62f96d72cce134e9dbd57afef30fab
+      internalID: 728505729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holeDownDisappering_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e3cb7ed31e94142b0a8ad10009a9a8
+      internalID: -1391704572
       vertices: []
       indices: 
       edges: []
@@ -210,10 +294,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      headAnmt_0: -195108521
-      headAnmt_3: -1091405056
-      headAnmt_2: -1679244675
-      headAnmt_1: 766694038
+      holeDownDisappering_0: -1018536850
+      holeDownDisappering_4: -2036095100
+      holeDownDisappering_7: -1391704572
+      holeDownDisappering_2: -1798695098
+      holeDownDisappering_1: 1229045867
+      holeDownDisappering_6: 728505729
+      holeDownDisappering_3: 302518441
+      holeDownDisappering_5: -1591452521
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

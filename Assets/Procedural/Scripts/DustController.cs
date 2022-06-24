@@ -14,7 +14,8 @@ public class DustController : MonoBehaviour
     }
     // Start is called before the first frame update
     public void EndDust(){
-        animator.Play("dustend");  
+        animator.Play("dustend");
+        // GameObject.Destroy(gameObject, 1); 
     }
 
     public void Update(){
